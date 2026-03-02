@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NailInsight AI — Gizlilik Politikası</title>
+    <title>NailInsight AI — Privacy Policy / Gizlilik Politikası</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #0a0a0f;
@@ -13,27 +19,49 @@
             line-height: 1.7;
             padding: 40px 20px;
         }
-        .container { max-width: 720px; margin: 0 auto; }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
         h1 {
             font-size: 28px;
             color: #ffffff;
             margin-bottom: 8px;
         }
+
         .subtitle {
             color: #8e8e93;
             font-size: 14px;
-            margin-bottom: 40px;
+            margin-bottom: 16px;
         }
+
         h2 {
             font-size: 18px;
             color: #ffffff;
             margin-top: 32px;
             margin-bottom: 12px;
         }
-        p, li { font-size: 15px; margin-bottom: 12px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 6px; }
-        a { color: #a78bfa; }
+
+        p,
+        li {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #a78bfa;
+        }
+
         .footer {
             margin-top: 48px;
             padding-top: 24px;
@@ -41,56 +69,168 @@
             font-size: 13px;
             color: #636366;
         }
+
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .lang-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid #2c2c2e;
+            background: transparent;
+            color: #8e8e93;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: #a78bfa;
+            color: #fff;
+            border-color: #a78bfa;
+        }
+
+        .lang-btn:hover {
+            border-color: #a78bfa;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>Gizlilik Politikası</h1>
-        <p class="subtitle">NailInsight AI — Son güncelleme: Mart 2026</p>
+        <h1>NailInsight AI</h1>
 
-        <h2>1. Toplanan Veriler</h2>
-        <p>NailInsight AI aşağıdaki verileri toplar:</p>
-        <ul>
-            <li><strong>Hesap bilgileri:</strong> E-posta adresi ve kullanıcı kimliği (Google veya Apple ile giriş yaptığınızda)</li>
-            <li><strong>Kullanım verileri:</strong> Günlük check-in kayıtları ve alışkanlık takip verileri</li>
-            <li><strong>Fotoğraflar:</strong> Yalnızca siz paylaştığınızda, tırnak analizi amacıyla</li>
-            <li><strong>Satın alma geçmişi:</strong> Premium abonelik durumu</li>
-            <li><strong>Çökme raporları:</strong> Uygulama hatalarını düzeltmek için anonim teknik veriler</li>
-        </ul>
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
+            <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+        </div>
 
-        <h2>2. Verilerin Kullanım Amacı</h2>
-        <ul>
-            <li>Hesabınızı oluşturmak ve yönetmek</li>
-            <li>Alışkanlık takibi ve kişisel istatistikler sunmak</li>
-            <li>Uygulama performansını iyileştirmek</li>
-            <li>Premium abonelik hizmetlerini sağlamak</li>
-        </ul>
+        <!-- TURKISH -->
+        <div id="lang-tr" class="lang-content active">
+            <p class="subtitle">Gizlilik Politikası — Son güncelleme: Mart 2026</p>
 
-        <h2>3. Veri Paylaşımı</h2>
-        <p>Kişisel verileriniz üçüncü taraflarla <strong>satılmaz</strong>. Aşağıdaki hizmet sağlayıcılar teknik altyapı için kullanılır:</p>
-        <ul>
-            <li><strong>Google Firebase:</strong> Kimlik doğrulama, veritabanı ve çökme raporları</li>
-            <li><strong>Apple:</strong> Giriş ve ödeme işlemleri</li>
-        </ul>
+            <h2>1. Toplanan Veriler</h2>
+            <p>NailInsight AI aşağıdaki verileri toplar:</p>
+            <ul>
+                <li><strong>Hesap bilgileri:</strong> E-posta adresi ve kullanıcı kimliği (Google veya Apple ile giriş
+                    yaptığınızda)</li>
+                <li><strong>Kullanım verileri:</strong> Günlük check-in kayıtları ve alışkanlık takip verileri</li>
+                <li><strong>Fotoğraflar:</strong> Yalnızca siz paylaştığınızda, tırnak analizi amacıyla</li>
+                <li><strong>Satın alma geçmişi:</strong> Premium abonelik durumu</li>
+                <li><strong>Çökme raporları:</strong> Uygulama hatalarını düzeltmek için anonim teknik veriler</li>
+            </ul>
 
-        <h2>4. Veri Güvenliği</h2>
-        <p>Verileriniz Firebase altyapısında şifreli olarak saklanır ve endüstri standartlarına uygun güvenlik önlemleri uygulanır.</p>
+            <h2>2. Verilerin Kullanım Amacı</h2>
+            <ul>
+                <li>Hesabınızı oluşturmak ve yönetmek</li>
+                <li>Alışkanlık takibi ve kişisel istatistikler sunmak</li>
+                <li>Uygulama performansını iyileştirmek</li>
+                <li>Premium abonelik hizmetlerini sağlamak</li>
+            </ul>
 
-        <h2>5. Veri Silme</h2>
-        <p>Hesabınızı ve tüm verilerinizi silmek için uygulama içi ayarlardan "Hesabı Sil" seçeneğini kullanabilir veya bize e-posta gönderebilirsiniz.</p>
+            <h2>3. Veri Paylaşımı</h2>
+            <p>Kişisel verileriniz üçüncü taraflarla <strong>satılmaz</strong>. Aşağıdaki hizmet sağlayıcılar teknik
+                altyapı için kullanılır:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Kimlik doğrulama, veritabanı ve çökme raporları</li>
+                <li><strong>Apple:</strong> Giriş ve ödeme işlemleri</li>
+            </ul>
 
-        <h2>6. Çocukların Gizliliği</h2>
-        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan veri toplamaz.</p>
+            <h2>4. Veri Güvenliği</h2>
+            <p>Verileriniz Firebase altyapısında şifreli olarak saklanır ve endüstri standartlarına uygun güvenlik
+                önlemleri uygulanır.</p>
 
-        <h2>7. Değişiklikler</h2>
-        <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişikliklerde uygulama içi bildirim yapılır.</p>
+            <h2>5. Veri Silme</h2>
+            <p>Hesabınızı ve tüm verilerinizi silmek için uygulama içi ayarlardan "Hesabı Sil" seçeneğini kullanabilir
+                veya bize e-posta gönderebilirsiniz.</p>
 
-        <h2>8. İletişim</h2>
-        <p>Sorularınız için: <a href="mailto:support@nailinsightai.com">support@nailinsightai.com</a></p>
+            <h2>6. Çocukların Gizliliği</h2>
+            <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan veri toplamaz.</p>
+
+            <h2>7. Değişiklikler</h2>
+            <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişikliklerde uygulama içi bildirim yapılır.
+            </p>
+
+            <h2>8. İletişim</h2>
+            <p>Sorularınız için: <a href="mailto:support@nailinsightai.com">support@nailinsightai.com</a></p>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="lang-en" class="lang-content">
+            <p class="subtitle">Privacy Policy — Last updated: March 2026</p>
+
+            <h2>1. Data We Collect</h2>
+            <p>NailInsight AI collects the following data:</p>
+            <ul>
+                <li><strong>Account information:</strong> Email address and user ID (when you sign in with Google or
+                    Apple)</li>
+                <li><strong>Usage data:</strong> Daily check-in records and habit tracking data</li>
+                <li><strong>Photos:</strong> Only when you share them, for nail wellness analysis</li>
+                <li><strong>Purchase history:</strong> Premium subscription status</li>
+                <li><strong>Crash reports:</strong> Anonymous technical data to fix app issues</li>
+            </ul>
+
+            <h2>2. How We Use Your Data</h2>
+            <ul>
+                <li>To create and manage your account</li>
+                <li>To provide habit tracking and personal statistics</li>
+                <li>To improve app performance</li>
+                <li>To deliver premium subscription services</li>
+            </ul>
+
+            <h2>3. Data Sharing</h2>
+            <p>Your personal data is <strong>never sold</strong> to third parties. The following service providers are
+                used for technical infrastructure:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Authentication, database, and crash reports</li>
+                <li><strong>Apple:</strong> Sign-in and payment processing</li>
+            </ul>
+
+            <h2>4. Data Security</h2>
+            <p>Your data is stored encrypted on Firebase infrastructure with industry-standard security measures.</p>
+
+            <h2>5. Data Deletion</h2>
+            <p>You can delete your account and all associated data using the "Delete Account" option in the app
+                settings, or by contacting us via email.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Our app is not intended for children under 13 years of age, and we do not knowingly collect data from
+                this age group.</p>
+
+            <h2>7. Changes</h2>
+            <p>This privacy policy may be updated from time to time. Significant changes will be communicated via in-app
+                notifications.</p>
+
+            <h2>8. Contact</h2>
+            <p>For questions: <a href="mailto:support@nailinsightai.com">support@nailinsightai.com</a></p>
+        </div>
 
         <div class="footer">
-            &copy; 2026 NailInsight AI. Tüm hakları saklıdır.
+            &copy; 2026 NailInsight AI. All rights reserved. / Tüm hakları saklıdır.
         </div>
     </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.querySelector('[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+        }
+        // Auto-detect browser language
+        if (!navigator.language.startsWith('tr')) switchLang('en');
+    </script>
 </body>
+
 </html>
