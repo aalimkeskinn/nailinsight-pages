@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NailInsight AI — Support / Destek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #d1d1d6;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #8e8e93;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #a78bfa;
+        }
+
+        .contact-card {
+            background: #1c1c1e;
+            border: 1px solid #2c2c2e;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        .contact-card .email-icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .contact-card a {
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card .response-time {
+            color: #8e8e93;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin-top: 32px;
+            color: #a78bfa;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #1c1c1e;
+            font-size: 13px;
+            color: #636366;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .lang-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid #2c2c2e;
+            background: transparent;
+            color: #8e8e93;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: #a78bfa;
+            color: #fff;
+            border-color: #a78bfa;
+        }
+
+        .lang-btn:hover {
+            border-color: #a78bfa;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        .faq-item {
+            background: #1c1c1e;
+            border: 1px solid #2c2c2e;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+
+        .faq-item strong {
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        .faq-item p {
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #a1a1a6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NailInsight AI</h1>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
+            <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+        </div>
+
+        <!-- TURKISH -->
+        <div id="lang-tr" class="lang-content active">
+            <p class="subtitle">Destek & İletişim</p>
+
+            <h2>📬 Bize Ulaşın</h2>
+            <p>NailInsight AI ile ilgili sorularınız, geri bildirimleriniz veya sorunlarınız için bize e-posta
+                gönderebilirsiniz.</p>
+
+            <div class="contact-card">
+                <div class="email-icon">✉️</div>
+                <a href="mailto:aalimkeskinn@gmail.com">aalimkeskinn@gmail.com</a>
+                <p class="response-time">Genellikle 24-48 saat içinde yanıtlıyoruz.</p>
+            </div>
+
+            <h2>❓ Sık Sorulan Sorular</h2>
+
+            <div class="faq-item">
+                <strong>Hesabımı nasıl silebilirim?</strong>
+                <p>Ayarlar → Hesap bölümünden "Hesabı Sil" butonuna tıklayarak hesabınızı ve tüm verilerinizi kalıcı
+                    olarak silebilirsiniz.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Premium satın almayı nasıl geri yüklerim?</strong>
+                <p>Premium ekranında "Satın Almayı Geri Yükle" butonuna tıklayın. Daha önce satın aldığınız premium
+                    erişim otomatik olarak geri yüklenir.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Bildirimler gelmiyor, ne yapmalıyım?</strong>
+                <p>Ayarlar → Bildirimler bölümünden bildirimlerin açık olduğundan emin olun. Ayrıca cihazınızın Ayarlar
+                    uygulamasından NailInsight'a bildirim izni verildiğini kontrol edin.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Verilerim güvende mi?</strong>
+                <p>Evet. Tüm verileriniz Google Firebase altyapısında şifreli olarak saklanır. Kişisel verileriniz
+                    üçüncü taraflarla paylaşılmaz veya satılmaz.</p>
+            </div>
+
+            <a class="nav-link" href="index.html">← Gizlilik Politikası</a>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="lang-en" class="lang-content">
+            <p class="subtitle">Support & Contact</p>
+
+            <h2>📬 Contact Us</h2>
+            <p>For questions, feedback, or issues related to NailInsight AI, you can reach us via email.</p>
+
+            <div class="contact-card">
+                <div class="email-icon">✉️</div>
+                <a href="mailto:aalimkeskinn@gmail.com">aalimkeskinn@gmail.com</a>
+                <p class="response-time">We typically respond within 24-48 hours.</p>
+            </div>
+
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <strong>How do I delete my account?</strong>
+                <p>Go to Settings → Account and tap "Delete Account" to permanently delete your account and all
+                    associated data.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>How do I restore my premium purchase?</strong>
+                <p>On the Premium screen, tap "Restore Purchase." Your previously purchased premium access will be
+                    automatically restored.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>I'm not receiving notifications. What should I do?</strong>
+                <p>Make sure notifications are enabled in Settings → Notifications. Also check that NailInsight has
+                    notification permission in your device's Settings app.</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Is my data safe?</strong>
+                <p>Yes. All data is stored encrypted on Google Firebase infrastructure. Your personal data is never
+                    shared with or sold to third parties.</p>
+            </div>
+
+            <a class="nav-link" href="index.html">← Privacy Policy</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 NailInsight AI. All rights reserved. / Tüm hakları saklıdır.
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.querySelector('[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+        }
+        // Auto-detect browser language
+        if (!navigator.language.startsWith('tr')) switchLang('en');
+    </script>
+</body>
+
+</html>
